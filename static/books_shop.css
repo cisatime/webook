@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    line-height: 64px;
+    box-shadow: 0 1px 4px hsl(0, 0%, 70%);
+}
+.logo {
+    font-size: 1.3em;
+}
+.header-right {
+    display: flex;
+}
+.header-right > div:hover {
+    background-color: #f9f9f9;
+    cursor: pointer;
+}
+.messages {
+    position: relative;
+    padding-left: 10px;
+}
+.messages i.fa-bell-o {
+    font-size: 1.2em;
+}
+.number-of-messages {
+    position: relative;
+    left: -13px;
+    top: -13px;
+    font-size: 0.8em;
+    padding: 3px 10px;
+    background-color: red;
+    border-radius: 12px;
+    color: #fff;
+    font-weight: 700;
+}
+.user-avatar {
+    height: 30px;
+    border-radius: 15px;
+    margin-right: 12px;
+}
+.user-info > a {
+    display: flex;
+    padding: 0 10px;
+    align-items: center;
+    text-decoration: none;
+    color: #000;
+}
+.main {
+    padding: 50px 0;
+    background-color: #f8f9f9;
+}
+.recently-read {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    background-color: #fff;
+    padding: 50px 10% 20px 10%;
+}
+.book-card {
+    padding: 40px 50px 20px 50px;
+}
+.book-card img {
+    display: block;
+    height: 200px;
+    width: 135px;
+}
+.book-card .book-name {
+    margin-top: 10px;
+}
+
+.book-card .book-press {
+    margin-top: 8px;
+}
+
+.book-card .reading-process {
+    margin-top: 5px;
+}
+
+
+.book-avatar {
+    box-shadow: 2px 2px 12px #a6a6a6;
+}
+.no-book-avatar {
+    width: 135px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 0 10px 0;
+    background-image: url("../static/pictures/defaultBookBackground.jpg");
+    color: #fff;
+    cursor: pointer;
+}
+.no-book-avatar span:last-child {
+    font-family: "宋体";
+}
+.book-name {
+    font-weight: 700;
+}
+.reading-process {
+    color: #8c8c8c;
+}
+.reading-process span {
+    font-size: 12px;
+}
+.reading-process span:before {
+    content: 'Owner：';
+}
+/*.reading-process span:after {
+    content: '点此聊天';
+}*/
+.title {
+    position: absolute;
+    top: 0;
+    padding: 10px 20px;
+    background-color: #03a9f4;
+    color: #fff;
+    border-radius: 0 0 5px 5px;
+}
+.all-book {
+    padding: 50px 10% 20px 10%;
+}
+.all-book h2 {
+    float: left;
+}
+.search-book {
+    float: right;
+}
+.search-book input {
+    padding: 7px 15px;
+    border-radius: 16px;
+    border: 1px solid #d9d9d9;
+}
+.search-book input:focus {
+    outline: none;
+}
+.search-book .fa {
+    padding: 10px;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+.book-list {
+    display: flex;
+    flex-wrap: wrap;
+    clear: both;
+}

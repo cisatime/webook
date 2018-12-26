@@ -1,0 +1,210 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    line-height: 64px;
+    box-shadow: 0 1px 4px hsl(0, 0%, 70%);
+}
+.logo {
+    font-size: 1.3em;
+}
+.header-right {
+    display: flex;
+}
+.header-right > div:hover {
+    background-color: #f9f9f9;
+    cursor: pointer;
+}
+.messages {
+    position: relative;
+    padding-left: 10px;
+}
+.messages i.fa-bell-o {
+    font-size: 1.2em;
+}
+.number-of-messages {
+    position: relative;
+    left: -13px;
+    top: -13px;
+    font-size: 0.8em;
+    padding: 3px 10px;
+    background-color: red;
+    border-radius: 12px;
+    color: #fff;
+    font-weight: 700;
+}
+.user-avatar {
+    height: 30px;
+    border-radius: 15px;
+    margin-right: 12px;
+}
+.user-info > a {
+    display: flex;
+    padding: 0 10px;
+    align-items: center;
+    text-decoration: none;
+    color: #000;
+}
+.main {
+    background-color: #f8f9f9;
+}
+.back {
+    padding: 20px 15%;
+    font-size: 1.2em;
+}
+.back > a {
+    color: #8c8c8c;
+    text-decoration: none;
+}
+.book-info {
+    display: flex;
+    padding: 30px 15% 50px 15%;
+}
+.book-avatar {
+    margin-right: 20px;
+    box-shadow: 2px 2px 12px #a6a6a6;
+}
+.book-avatar > img {
+    display: block;
+    width: 175px;
+    height: 240px;
+}
+.book-introduction {
+    position: relative;
+}
+.book-introduction > * {
+    margin-bottom: 10px;
+}
+.book-author {
+    font-size: 0.8em;
+}
+.book-author:before {
+    content: '作者 ';
+}
+.book-words-count {
+    font-size: 0.8em;
+}
+.book-words-count:before {
+    content: '字数 约 ';
+}
+.book-words-count:after {
+    content: ' 字';
+}
+.book-details
+{
+    position: absolute;
+    padding: 8px 24px;
+    width: 130px;
+    bottom: 50px;
+    margin: 0;
+    background-color: #03a9f4;
+    border-radius: 5px;
+    color: #fff;
+}
+.book-read {
+    position: absolute;
+    bottom: 0px;
+    width: 130px;
+    padding: 8px 24px;
+    margin: 0;
+    border-radius: 5px;
+    border: none;
+    background-color: #03a9f4;
+    color: #fff;
+    cursor: pointer;
+}
+.book-notes {
+    position: relative;
+    padding: 0 15%;
+    margin-top: 20px;
+    background-color: #fff;
+}
+.book-notes > :first-child {
+    position: absolute;
+    top: 0px;
+    left: 170px;
+    padding: 10px 20px;
+    background-color: #03a9f4;
+    border-radius: 0 0 5px 5px;
+    color: #fff;
+}
+.notes-list {
+    padding-top: 60px;
+}
+.chapter-title {
+    padding: 10px 0;
+}
+.note-item {
+    font-family: '等线';
+    padding: 5px 15px;
+    background-color: #e6d6bc;
+    position: relative;
+    left: 180px;
+    top: -100px;
+}
+.note-times {
+    color: #8c8c8c;
+    border-left: 3px solid #03a9f4;
+    padding: 0 10px;
+}
+.original-text {
+    line-height: 2em;
+    padding: 10px 0;
+    font-family: arial, sans-serif;
+}
+.annotation {
+    margin-left: 100px;
+    font-family: '等线';
+    padding: 5px 15px;
+    background-color: #e6d6bc;
+    border-radius: 5px;
+    line-height: 1.5em;
+}
+.annotation > * {
+    padding: 10px 0;
+}
+.my-note:before,
+.teacher-note:before {
+    padding: 0 5px;
+    margin-bottom: 10px;
+    display: inline-block;
+    border-left: 3px solid #d0b280;
+}
+.my-note:before {
+    content: '我的批注：';
+}
+.teacher-note {
+    border-top: 1px solid #d0b280;
+    position: relative;
+    left: -700px;
+    top: 150px;
+}
+.teacher-note:before {
+    content: '评论：';
+}
+.note-author {
+    text-align: right;
+}
+.note-author:before {
+    content: '——';
+}
+.user-photo{
+    position: relative;
+    left: -200px;
+    top: -10px;
+}
+.user-name{
+    text-align:center;
+}
+
+.like{
+    font-size:20px;
+    cursor:pointer;
+}
+
+
